@@ -27,3 +27,16 @@ java.lang.NullPointerException: Cannot invoke "org.osgi.framework.BundleContext.
 
 !ENTRY org.eclipse.core.jobs 2 2 2024-03-19 12:53:04.700
 !MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.oomph.internal.ui.EarlyStart$1
+!SESSION 2024-03-27 03:16:37.799 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-03-27 03:16:39.850
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-03-27 03:16:40.704
+!MESSAGE Logback config file: /home/miskat/CS/Java-Programming/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
