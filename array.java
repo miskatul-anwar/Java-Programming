@@ -10,5 +10,6 @@ public class array {
     }
     sc.close();
     System.out.println("Array elements are: " + Arrays.toString(a));
+    System.out.printf("Maximum element is: %d\n", a[n - 1]);
   }
 }
