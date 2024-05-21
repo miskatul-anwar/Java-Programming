@@ -1,4 +1,4 @@
-package com.utils;
+package cse.utils;
 
 import java.util.*;
 
