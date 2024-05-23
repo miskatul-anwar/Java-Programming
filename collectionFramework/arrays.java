@@ -1,6 +1,6 @@
 import java.util.*;
 import cse.utils.*;
-import java.lang.Exception;
+// import java.lang.Exception;
 
 public class arrays {
   public static void main(String[] args) {
@@ -11,14 +11,17 @@ public class arrays {
     }
     spec.print(array.toString());
     int b = 7;
+    // if (b < 7) {
+    // throw new ArithmeticException();
+    // }
     try {
       for (int it : array) {
         spec.print(it / (b - 7) + " ");
       }
-    } catch (ArithmeticException e) {
+    } catch (ArithmeticException | ArrayIndexOutOfBoundsException | ArrayStoreException e) {
       spec.println("Divide by 0");
-    } catch (ArrayIndexOutOfBoundsException e) {
-      spec.println("Array Index Out of Bound");
+    } finally {
+      spec.println("In Finally");
     }
     return;
   }
