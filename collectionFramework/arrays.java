@@ -3,7 +3,11 @@ import cse.utils.*;
 
 public class arrays {
   public static void main(String[] args) {
-    ArrayList<Integer> array = new ArrayList<Integer>();
+    ArrayList<Integer> array = new ArrayList<Integer>(7);
+    int itr = 0;
+    for (int i : array) {
+      array.add(++itr);
+    }
     int b = 7;
     try {
       for (int it : array) {
