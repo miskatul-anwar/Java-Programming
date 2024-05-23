@@ -11,7 +11,7 @@ public class arrays {
     int b = 7;
     try {
       for (int it : array) {
-        spec.print(it / (b - 7));
+        spec.print(it / (b - 7) + " ");
       }
     } catch (ArithmeticException e) {
       spec.println("Divide by 0");
