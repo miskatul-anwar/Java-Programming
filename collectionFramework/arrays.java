@@ -8,6 +8,7 @@ public class arrays {
     for (int i : array) {
       array.add(++itr);
     }
+    spec.print(array.toString());
     int b = 7;
     try {
       for (int it : array) {
