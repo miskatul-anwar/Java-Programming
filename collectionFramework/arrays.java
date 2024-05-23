@@ -3,13 +3,17 @@ import cse.utils.*;
 
 public class arrays {
   public static void main(String[] args) {
-    ArrayList<Integer> list = new ArrayList<Integer>();
-    int array[] = { 5, 8, 7, 4, 9 };
-    for (int it : array) {
-      list.add(it);
+    ArrayList<Integer> array = new ArrayList<Integer>();
+    int b = 7;
+    try {
+      for (int it : array) {
+        spec.print(it / (b - 7));
+      }
+    } catch (ArithmeticException e) {
+      spec.println("Divide by 0");
+    } catch (ArrayIndexOutOfBoundsException e) {
+      spec.println("Array Index Out of Bound");
     }
-    list.sort(null);
-    spec.println(list);
     return;
   }
 }
