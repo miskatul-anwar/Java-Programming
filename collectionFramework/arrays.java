@@ -1,6 +1,6 @@
 import java.util.*;
 import cse.utils.*;
-// import java.lang.Exception;
+//=> import java.lang.Exception;
 
 public class arrays {
   public static void main(String[] args) {
