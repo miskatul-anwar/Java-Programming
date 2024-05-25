@@ -1,9 +1,5 @@
 import cse.utils.*;
 
-// interface Animals {
-//   void walk();
-// }
-
 abstract class Animals {
   abstract void walk();
 }
