@@ -1,17 +1,16 @@
-import cse.utils.*;
-import java.util.*;
-
 public class Error {
-  public static void main(String[] args) {
-    int a[] = { 1, 2, 3, 5, 5, 6, 7 };
+  public static void main(String args[]) {
+    int a[] = { 7, 9, 45, 63, 10 };
     int b = 7;
     try {
       for (int i = 0; i < 7; i++) {
         int x = a[i] / (b - 7);
-        spec.print(x);
+        System.out.print(x);
       }
-    } catch (Exception e) {
-
+    } catch (ArithmeticException e) {
+      System.out.println("Division by Zero");
+    } catch (ArrayIndexOutOfBoundsException e) {
+      System.out.println("Array Index Error");
     }
   }
 }

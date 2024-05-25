@@ -21,4 +21,10 @@ public class spec {
     sc.close();
     return x;
   }
+
+  public static void swap(Object a, Object b) {
+    Object t = a;
+    a = b;
+    b = t;
+  }
 }
