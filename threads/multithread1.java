@@ -10,8 +10,20 @@ class A extends Thread {
     try {
       Thread.sleep(100);
     } catch (InterruptedException exception) {
+      System.out.println("Gottcha 🤠");
     } finally {
       System.out.println("End of thread A");
     }
+  }
+}
+
+public class multithread1 {
+  public static void main(String[] args) {
+    System.out.println("Main Method !");
+    A a1 = new A();
+    A a2 = new A();
+    a1.start();
+    a2.start();
+    return;
   }
 }
