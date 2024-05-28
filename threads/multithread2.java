@@ -9,7 +9,7 @@ class A extends Thread {
     }
     try {
       Thread.sleep(100);
-    } catch (InterruptedException exception) {
+    } catch (InterruptedException e) {
       System.out.println("Gottcha 🤠");
     } finally {
       System.out.println("End of thread A");
@@ -17,7 +17,7 @@ class A extends Thread {
   }
 }
 
-public class multithread1 {
+public class multithread2 extends Thread {
   public static void main(String[] args) {
     System.out.println("Main Method !");
     A a1 = new A();
