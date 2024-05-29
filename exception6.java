@@ -17,11 +17,14 @@ public class exception6 {
     try {
       if (s2.equals(s1)) {
         spec.println("Match");
+      } else {
+        noMatchException exp = new noMatchException("noMatchException");
+        throw exp;
       }
-    } catch (Exception exp) {
+    } catch (noMatchException exp) {
       System.out.println(exp.getMessage());
     } finally {
-      System.out.println("I love you 💌 ");
+      System.out.println("From finally");
     }
     return;
   }
