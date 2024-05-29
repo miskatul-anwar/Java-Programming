@@ -1,5 +1,4 @@
 import java.util.Random;
-
 import cse.utils.*;
 
 class Demo {
