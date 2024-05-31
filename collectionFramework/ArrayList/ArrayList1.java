@@ -13,7 +13,10 @@ public class ArrayList1 {
     // list.remove(1);
     // list.remove(Integer.valueOf(30));
     // list.remove(10);
-    System.out.println(list.toString());
+    if (list.contains(10)) {
+
+      System.out.println(list.toString());
+    }
     return;
   }
 }
