@@ -3,8 +3,8 @@ import cse.utils.*;
 import java.util.Scanner;
 
 class noMatchException extends Exception {
-  noMatchException(String message) {
-    super(message);
+  noMatchException(String e) {
+    super(e);
   }
 }
 
