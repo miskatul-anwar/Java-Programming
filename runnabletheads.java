@@ -9,6 +9,7 @@ class X implements Runnable {
 
 public class runnabletheads {
   public static void main(String[] args) {
+    // X runnable = new X();
     Thread threadX = new Thread(new X());
     threadX.start();
   }
