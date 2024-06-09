@@ -1,6 +1,9 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
+
+import javax.swing.ListSelectionModel;
 
 /**
  * iterateInMap
@@ -14,6 +17,10 @@ public class iterateInMap {
         "one", 1,
         "two", 2,
         "three", 3);
+    ArrayList<String> arrayList = new ArrayList<>();
+    arrayList.add("Hello");
+
+    arrayList.forEach(it -> System.out.println(it));
 
     // tm.put("one", 1);
     // tm.put("two", 2);
