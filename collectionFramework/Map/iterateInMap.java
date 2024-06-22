@@ -47,5 +47,6 @@ public class iterateInMap {
     // Method IV
     tm.forEach((key, value) -> System.out.println(key + " + " + value));
     return;
+
   }
 }

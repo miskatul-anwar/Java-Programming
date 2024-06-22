@@ -1,0 +1,178 @@
+{
+  "main": {
+    "id": "d7337a6dc4429350",
+    "type": "split",
+    "children": [
+      {
+        "id": "571f7cac2ea2190f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "584f8f25c6ef86ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Intro to Hacking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cdfcbf5fb187ee66",
+    "type": "split",
+    "children": [
+      {
+        "id": "e143c9a35fba26b5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "afc5b36aa7e21085",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "53fb449e2fe5ebe2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4c1e00477f9328b2",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "508e8bd58cc59ebf",
+    "type": "split",
+    "children": [
+      {
+        "id": "86367ab224507dbd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b2b450142f3471e5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Intro to Hacking.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8ea91e441a02e3a6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Intro to Hacking.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ae2f39351ac10d34",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "adb4196d19cd3bbe",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Intro to Hacking.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "584f8f25c6ef86ef",
+  "lastOpenFiles": [
+    "2024-06-22 11-10-39.mp4",
+    "Pasted image 20240622104140.png",
+    "Screenshot_20240622_103902.png",
+    "Pasted image 20240622103729.png",
+    "Pasted image 20240622102526.png",
+    "Pasted image 20240622102337.png",
+    "Pasted image 20240622102045.png",
+    "Pasted image 20240622101458.png",
+    "Pasted image 20240622100736.png",
+    "Intro to Hacking.md",
+    "Java Noob.md",
+    "Untitled.md",
+    "README.md",
+    "Pasted image 20240621103550.png",
+    "getters_setters2.java~",
+    "getters_setters2.java",
+    "Pasted image 20240621100946.png",
+    "collectionFramework/StringBuilders.java~",
+    "inheritance.class",
+    "Rectangle.class",
+    "Circle.class",
+    "Shape.class",
+    "inheritance.java~",
+    "inheritance.java",
+    "this1.java~"
+  ]
+}

@@ -7,7 +7,7 @@ public class Jaccard2 {
   public static void main(String[] args) {
     String s1 = "Data is the new oil of digital economy";
     String s2 = "Data is a new oil";
-    String temp = s1 + s2;
+    String temp = s1 + " " + s2;
     HashSet<String> uni = new HashSet<>();
     HashSet<String> Omi1 = new HashSet<>();
     HashSet<String> Omi2 = new HashSet<>();
