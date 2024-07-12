@@ -48,15 +48,17 @@ java hello
 Hello World!
 ```
 
-# Program Basics 
+# Program Basics
+
 ## The `instanceof` operator
 
-The `instanceof` operator in Java is used to check if an object is an instance of a particular class, interface, or superclass. It returns `true` 
+The `instanceof` operator in Java is used to check if an object is an instance of a particular class, interface, or superclass. It returns `true`
 if the object is an instance of the specified type, and `false` otherwise.
 
 Here are some examples:
 
 1. **Checking if an object is an instance of a class**:
+
 ```java
 public class Animal {
     // ...
@@ -69,9 +71,11 @@ public class Dog extends Animal {
 Dog myDog = new Dog();
 System.out.println(myDog instanceof Animal); // prints true
 ```
+
 In this example, we're checking if `myDog` is an instance of the `Animal` class. Since `Dog` is a subclass of `Animal`, the result is `true`.
 
 2. **Checking if an object implements an interface**:
+
 ```java
 public interface Printable {
     void print();
@@ -86,9 +90,11 @@ public class Document implements Printable {
 Document myDoc = new Document();
 System.out.println(myDoc instanceof Printable); // prints true
 ```
+
 In this example, we're checking if `myDoc` implements the `Printable` interface. Since it does, the result is `true`.
 
 3. **Checking if an object is a subclass of another class**:
+
 ```java
 public class Vehicle {
     // ...
@@ -101,35 +107,43 @@ public class Car extends Vehicle {
 Car myCar = new Car();
 System.out.println(myCar instanceof Vehicle); // prints true
 ```
+
 In this example, we're checking if `myCar` is an instance of the `Vehicle` class. Since it's a subclass of `Vehicle`, the result is `true`.
 
 4. **Using instanceof with null**:
+
 ```java
 Object obj = null;
 System.out.println(obj instanceof Object); // prints false
 ```
-In this example, we're checking if a null object is an instance of the `Object` class. Since it's not an instance of anything (it's null), the 
+
+In this example, we're checking if a null object is an instance of the `Object` class. Since it's not an instance of anything (it's null), the
 result is `false`.
 
 5. **Using instanceof with primitive types**:
+
 ```java
 int x = 5;
 System.out.println(x instanceof Integer); // prints true
 ```
-In this example, we're checking if a primitive `int` value is an instance of the `Integer` class. Since it's a wrapper around the primitive type, 
+
+In this example, we're checking if a primitive `int` value is an instance of the `Integer` class. Since it's a wrapper around the primitive type,
 the result is `true`.
 
-Remember that `instanceof` only checks the runtime type of the object, not its compile-time type. This means you can use it to check for 
+Remember that `instanceof` only checks the runtime type of the object, not its compile-time type. This means you can use it to check for
 unexpected types at runtime, but be careful when using it to ensure correct behavior in your code.
 
 ## The `static` keyword
-***
-The `static` keyword in Java is used to declare static variables or methods that belong to a class rather than an instance of the class. Here are 
+
+---
+
+The `static` keyword in Java is used to declare static variables or methods that belong to a class rather than an instance of the class. Here are
 some key uses of the `static` keyword:
 
 1. **Static Variables**: You can use `static` variables to store values that don't change throughout the program's execution.
 
 Example:
+
 ```java
 public class MyMath {
     public static int MAX_VALUE = 100;
@@ -139,11 +153,13 @@ public class MyMath {
     }
 }
 ```
+
 In this example, `MAX_VALUE` is a class-level variable that can be accessed without creating an instance of the `MyMath` class.
 
 2. **Static Methods**: You can use `static` methods to perform operations that don't depend on instance-specific data.
 
 Example:
+
 ```java
 public class MathUtil {
     public static double sqrt(double num) {
@@ -155,12 +171,14 @@ public class MathUtil {
     }
 }
 ```
+
 In this example, the `sqrt` method is a `static` method that can be called without creating an instance of the `MathUtil` class.
 
-3. **Singleton Pattern**: You can use `static` variables to implement the Singleton pattern, where only one instance of a class exists throughout 
-the program's execution.
+3. **Singleton Pattern**: You can use `static` variables to implement the Singleton pattern, where only one instance of a class exists throughout
+   the program's execution.
 
 Example:
+
 ```java
 public class Logger {
     private static Logger instance = null;
@@ -175,12 +193,14 @@ public class Logger {
     // ...
 }
 ```
+
 In this example, the `Logger` class uses a `static` variable to keep track of the single instance.
 
 4. **Utility Methods**: You can use `static` methods as utility methods that can be called from anywhere in your code without creating an instance
-of the class.
+   of the class.
 
 Example:
+
 ```java
 public class StringHelper {
     public static boolean isEmpty(String str) {
@@ -193,24 +213,32 @@ public class StringHelper {
     }
 }
 ```
+
 In this example, the `isEmpty` method is a `static` utility method that can be called from anywhere in your code.
 
 These are just a few examples of how you can use the `static` keyword in Java. Remember to use it wisely and only when necessary!
+
 ## Encapsulation
-***
+
+---
+
 - Java Packages
 - Access Modifiers
 - Java Encapsulation
 - Data Hiding
 - The `static` keyword
+
 ### Java Packages
+
 A package is simply a container that groups related types (Java classes, interfaces, enumerations, and annotations)
-An example package: 
+An example package:
 ![[Screenshot_20240621_095243.png]]
 How to use them?
 ![[Pasted image 20240621095621.png]]
+
 ### Access Modifiers
-In Java, access modifiers are keywords that determine the visibility of a class, method, or variable to other parts of your program. They control 
+
+In Java, access modifiers are keywords that determine the visibility of a class, method, or variable to other parts of your program. They control
 who can see or interact with these elements.
 
 **Access Modifiers**
@@ -223,6 +251,7 @@ who can see or interact with these elements.
 **Examples**
 
 Let's consider a simple example with a class `Car`:
+
 ```java
 public class Car {
     // public variable
@@ -240,14 +269,15 @@ public class Car {
     }
 }
 ```
+
 **Use Cases**
 
 ### Public
 
-* Use public classes when you want to expose a class or interface to the outside world.
-* Examples:
-	+ A web service API that needs to be accessed by clients.
-	+ A utility class that provides common functionality.
+- Use public classes when you want to expose a class or interface to the outside world.
+- Examples:
+  - A web service API that needs to be accessed by clients.
+  - A utility class that provides common functionality.
 
 ```java
 public class MathUtils {
@@ -256,17 +286,21 @@ public class MathUtils {
     }
 }
 ```
+
 ### Private
 
-* Use private variables or methods when you want to hide internal implementation details from the outside world.
-* Examples:
-	+ A `Car` class might have a private `startEngine()` method that's not meant to be called directly by other classes.
-	+ An immutable class might have private setters and getters.
+- Use private variables or methods when you want to hide internal implementation details from the outside world.
+- Examples:
+  - A `Car` class might have a private `startEngine()` method that's not meant to be called directly by other classes.
+  - An immutable class might have private setters and getters.
+
 #### Getters & Setters
-Sample code on getters and setters: 
+
+Sample code on getters and setters:
 ![[Pasted image 20240621100946.png]]
 Another example:
 ![[Pasted image 20240621103550.png]]
+
 #### Types of Access Modifiers
 
 | Access <br>Modifiers | Same<br>Class | Same<br>package<br>subclass | Same<br>package<br>non-subclass | Difference<br>Package<br>subclass | Different<br>package<br>non-subclass |
@@ -277,22 +311,24 @@ Another example:
 |       `public`       |       Y       |              Y              |                Y                |                 Y                 |                  Y                   |
 
 ### Encapsulation
-Encapsulation is a fundamental concept in object-oriented programming (OOP) that binds together the data (variables) and the methods (functions) 
-that manipulate that data within a single unit, such as a class or module. This unit is designed to hide its internal details from the outside 
+
+Encapsulation is a fundamental concept in object-oriented programming (OOP) that binds together the data (variables) and the methods (functions)
+that manipulate that data within a single unit, such as a class or module. This unit is designed to hide its internal details from the outside
 world while exposing only necessary information through a controlled interface.
 
 **Why Encapsulation?**
 
-1. **Data Hiding**: Encapsulation helps to hide the implementation details of an object from the outside world, making it difficult for other 
-parts of the program to access or modify the data directly.
-2. **Abstraction**: It provides abstraction by showing only the necessary information to the outside world while hiding the internal 
-implementation details.
+1. **Data Hiding**: Encapsulation helps to hide the implementation details of an object from the outside world, making it difficult for other
+   parts of the program to access or modify the data directly.
+2. **Abstraction**: It provides abstraction by showing only the necessary information to the outside world while hiding the internal
+   implementation details.
 3. **Code Organization**: Encapsulation promotes good code organization and structure by grouping related data and methods together.
 
 **Java Examples:**
 
 1. **Simple Class**: A basic Java class that encapsulates a private integer variable `x` and provides a public method `getValue()` to retrieve its
-value:
+   value:
+
 ```java
 public class SimpleClass {
     private int x;
@@ -306,8 +342,10 @@ public class SimpleClass {
     }
 }
 ```
-2. **Bank Account**: A Java class that encapsulates a bank account, with private fields for balance and account number, and public methods to 
-deposit, withdraw, and get the balance:
+
+2. **Bank Account**: A Java class that encapsulates a bank account, with private fields for balance and account number, and public methods to
+   deposit, withdraw, and get the balance:
+
 ```java
 public class BankAccount {
     private double balance;
@@ -335,8 +373,10 @@ public class BankAccount {
     }
 }
 ```
+
 3. **Student Record**: A Java class that encapsulates a student's record, with private fields for name, age, and grades, and public methods to set
-and retrieve the information:
+   and retrieve the information:
+
 ```java
 public class StudentRecord {
     private String name;
@@ -362,6 +402,7 @@ public class StudentRecord {
     }
 }
 ```
+
 **Use Cases:**
 
 1. **Security**: Encapsulation ensures that sensitive data is protected from unauthorized access.
@@ -370,35 +411,39 @@ public class StudentRecord {
 
 **Applications:**
 
-1. **Database Management Systems**: Database management systems like MySQL or Oracle use encapsulation to hide their internal implementation 
-details while providing a controlled interface for data manipulation.
-2. **Financial Applications**: Banking and financial applications, such as accounting software, use encapsulation to protect sensitive customer 
-data and ensure secure transactions.
+1. **Database Management Systems**: Database management systems like MySQL or Oracle use encapsulation to hide their internal implementation
+   details while providing a controlled interface for data manipulation.
+2. **Financial Applications**: Banking and financial applications, such as accounting software, use encapsulation to protect sensitive customer
+   data and ensure secure transactions.
 3. **Gaming**: Games often use encapsulation to hide the internal workings of game mechanics, levels, or characters, making it easier to modify or
-extend the game without affecting other parts.
+   extend the game without affecting other parts.
 
 In summary, encapsulation is a fundamental concept in object-oriented programming that helps to organize code, protect sensitive data, and improve
 code reusability.
+
 ### Data Hiding
 
 Data hiding is a principle of encapsulation that conceals the internal representation of an object's state (data) from external objects, making it
 difficult for other parts of the program to access or modify the data directly. This helps to:
 
 1. **Prevent Accidental Changes**: By hiding the internal state, you prevent accidental changes to the data from outside the class.
-2. **Control Access**: You can control access to the data by providing methods (getters and setters) that allow only authorized objects to modify 
-the data.
+2. **Control Access**: You can control access to the data by providing methods (getters and setters) that allow only authorized objects to modify
+   the data.
 3. **Improve Code Quality**: Data hiding encourages good coding practices, such as using meaningful variable names and encapsulating related data.
 
 **How to Apply Data Hiding:**
 
 1. **Make Data Private**: Declare the data variables as private within the class:
+
 ```java
 public class Example {
     private int x;
     // ...
 }
 ```
+
 2. **Use Getters and Setters**: Provide public methods (getters and setters) that allow controlled access to the data:
+
 ```java
 public class Example {
     private int x;
@@ -412,7 +457,9 @@ public class Example {
     }
 }
 ```
+
 3. **Avoid Direct Access**: Refrain from accessing the data directly from outside the class:
+
 ```java
 public class Example {
     private int x;
@@ -422,6 +469,7 @@ public class Example {
     }
 }
 ```
+
 **Best Practices:**
 
 1. **Use Meaningful Variable Names**: Use descriptive names for your variables to make the code more readable.
@@ -431,15 +479,19 @@ public class Example {
 
 **Real-World Examples:**
 
-1. **Bank Account**: A bank account class should hide its internal balance and only provide methods for depositing, withdrawing, and getting the 
-balance.
-2. **Person Information**: A person information class might hide their personal details (name, age, address) and provide getter methods to access 
-this information.
+1. **Bank Account**: A bank account class should hide its internal balance and only provide methods for depositing, withdrawing, and getting the
+   balance.
+2. **Person Information**: A person information class might hide their personal details (name, age, address) and provide getter methods to access
+   this information.
 
 By applying data hiding principles, you can create more robust, maintainable, and secure code that is easier to understand and modify over time.
+
 ## File Handling
-***
-* Write a program of copy the contents of a file named “INPUT.DAT” into a file called “OUPUT.DAT”.
+
+---
+
+- Write a program of copy the contents of a file named “INPUT.DAT” into a file called “OUPUT.DAT”.
+
 ```java
 public class copyPaste {
   public static void main(String[] args) throws IOException {
@@ -457,7 +509,9 @@ public class copyPaste {
   }
 }
 ```
-* Another example:
+
+- Another example:
+
 ```java
 import java.io.*;
 
@@ -479,7 +533,9 @@ public class file1 {
   }
 }
 ```
-* One more:
+
+- One more:
+
 ```java
 import java.io.*;
 
@@ -499,8 +555,10 @@ public class file3 {
   }
 }
 ```
+
 ## `final` keyword in Java
-***
+
+---
 
 |       Type        |                                  Description                                  |
 | :---------------: | :---------------------------------------------------------------------------: |
@@ -509,8 +567,11 @@ public class file3 {
 |  Final<br>Class   | Class with `final` keyword cannot be extended or inherited from other classes |
 
 ## Java Inheritance
-***
+
+---
+
 ### 01 (Method overriding)
+
 ```java
 // Parent class (Shape)
 class Shape {
@@ -551,7 +612,9 @@ public class inheritance {
 }
 
 ```
+
 ### 02
+
 ```java
 // Parent class (Vehicle)
 class Vehicle {
@@ -589,9 +652,13 @@ public class Main {
     }
 }
 ```
+
 ## `super` keyword
-***
-* Unable to find your parents ?
+
+---
+
+- Unable to find your parents ?
+
 ```java
 class Animal {
     void sound() {
@@ -614,10 +681,15 @@ public class Main {
     }
 }
 ```
+
 ## `this` keyword
-***
+
+---
+
 _Wanna abuse current object?_
-* A sample code without `this` keyword :
+
+- A sample code without `this` keyword :
+
 ```java
 class Complex {
   int a, b;
@@ -650,7 +722,9 @@ public class this1 {
 
 
 ```
-* Let's use `this` keyword,
+
+- Let's use `this` keyword,
+
 ```java
 class Complex {
   int a, b;
@@ -693,8 +767,11 @@ public class this1 {
 | `this` can be used to return and pass as an argument in the context<br>of a currentt class object | `super` can be used to return and pass as an<br>argument in the context of an immediate parent class object |
 
 ## Constructors : Abusing `class`
-***
+
+---
+
 ### 01
+
 ```java
 class Innerconstructors {
   int a, b;
@@ -725,7 +802,9 @@ public class constructors {
 
 // OUTPUT: 11
 ```
+
 ### 02
+
 ```java
 class Innerconstructors {
   int a, b;
@@ -752,7 +831,9 @@ public class constructors {
 }
 //OUTPUT: New object created!
 ```
+
 ### 03
+
 ```java
 class Innerconstructors {
   int a, b;
@@ -775,7 +856,9 @@ public class constructors {
 }
 
 ```
+
 ### 04
+
 ```java
 class Innerconstructors {
   int a, b;
@@ -803,7 +886,9 @@ public class constructors {
 ```
 
 ## Method Overloading
-***
+
+---
+
 ```java
 public class methodOverloading {
   void greetings() {
@@ -816,8 +901,11 @@ public class methodOverloading {
 }
 
 ```
+
 ## Possible ways to iterate `🏃`
-***
+
+---
+
 ```java
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -872,8 +960,11 @@ public class iterateInMap {
 }
 
 ```
+
 ## String Builders
-***
+
+---
+
 ```java
 import cse.utils.*;
 
@@ -893,9 +984,13 @@ public class StringBuilders {
   }
 }
 ```
+
 ## The `Map` framework
-***
+
+---
+
 ### Tree Map
+
 ```java
 import java.util.*;
 
@@ -926,7 +1021,9 @@ public class treeMap1 {
 }
 
 ```
+
 ### Hash Map
+
 ```java
 import java.util.*;
 
@@ -957,8 +1054,11 @@ public class hashMap1 {
 }
 
 ```
+
 ## OMG `ArrayList`
-***
+
+---
+
 ```java
 import java.util.ArrayList;
 
@@ -984,7 +1084,9 @@ public class ArrayList1 {
 }
 
 ```
+
 ### Binary Search
+
 ```java
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -1010,9 +1112,13 @@ public class binarySearch1 {
 
 
 ```
+
 ## Hot `Set`
-***
+
+---
+
 ### HashSet
+
 ```java
 import java.util.HashSet;
 
@@ -1033,7 +1139,9 @@ public class hashSet {
 }
 
 ```
+
 ### TreeSet
+
 ```java
 import java.util.TreeSet;
 
@@ -1053,7 +1161,9 @@ public class treeset {
 }
 
 ```
+
 ### Linked Hash Set
+
 ```java
 import java.util.LinkedHashSet;
 import java.util.*;
@@ -1071,8 +1181,11 @@ public class linkedhashset {
 }
 
 ```
+
 ## It's me bro :) `Stack`
-***
+
+---
+
 ```java
 import java.util.Stack;
 
@@ -1093,9 +1206,13 @@ public class stack1 {
 }
 
 ```
+
 ## I'd like to be dynamic! `Heap`
-***
+
+---
+
 ### Queue
+
 ```java
 import java.util.LinkedList;
 
@@ -1114,7 +1231,9 @@ public class queue1 {
 }
 
 ```
+
 ### Dequeue
+
 ```java
 import java.util.ArrayDeque;
 
@@ -1142,7 +1261,9 @@ public class Deque {
 }
 
 ```
+
 ### Priority Queue
+
 ```java
 import java.util.Comparator;
 import java.util.PriorityQueue;

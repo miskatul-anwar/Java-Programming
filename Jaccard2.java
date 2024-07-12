@@ -3,6 +3,8 @@ import java.util.*;
 /**
  * Jaccard2
  */
+
+
 public class Jaccard2 {
   public static void main(String[] args) {
     String s1 = "Data is the new oil of digital economy";
@@ -30,7 +32,6 @@ public class Jaccard2 {
         count++;
       }
     }
-
     int n = uni.size();
     System.out.println((double) count / n);
     return;

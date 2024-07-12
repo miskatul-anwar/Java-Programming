@@ -35,5 +35,6 @@ public class Jaccard {
     int a = count;
     float jaccard = (float) a / b;
     System.out.println("Jaccard similarity: " + jaccard);
+    System.out.println();
   }
 }

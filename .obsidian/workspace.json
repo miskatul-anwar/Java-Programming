@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Intro to Hacking.md",
+                "file": "Java Noob.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Intro to Hacking.md",
+                "file": "Java Noob.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Intro to Hacking.md",
+                "file": "Java Noob.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Intro to Hacking.md"
+                "file": "Java Noob.md"
               }
             }
           }
@@ -148,6 +148,9 @@
   },
   "active": "584f8f25c6ef86ef",
   "lastOpenFiles": [
+    "Screenshot_20240621_095243.png",
+    "Java Noob.md",
+    "Intro to Hacking.md",
     "2024-06-22 11-10-39.mp4",
     "Pasted image 20240622104140.png",
     "Screenshot_20240622_103902.png",
@@ -157,8 +160,6 @@
     "Pasted image 20240622102045.png",
     "Pasted image 20240622101458.png",
     "Pasted image 20240622100736.png",
-    "Intro to Hacking.md",
-    "Java Noob.md",
     "Untitled.md",
     "README.md",
     "Pasted image 20240621103550.png",
@@ -171,7 +172,6 @@
     "Circle.class",
     "Shape.class",
     "inheritance.java~",
-    "inheritance.java",
-    "this1.java~"
+    "inheritance.java"
   ]
 }
