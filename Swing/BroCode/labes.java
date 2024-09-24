@@ -20,11 +20,12 @@ public class labes {
     label.setBackground(new Color(0, 0, 0));
     label.setIconTextGap(-1);
     label.setText("Bro, do you even code ?");
+    frame.add(label);
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.setSize(500, 500);
     frame.setVisible(true);
-    frame.add(label);
     frame.setLayout(null);
     frame.setResizable(false);
+    frame.pack();
   }
 }

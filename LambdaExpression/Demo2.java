@@ -14,7 +14,7 @@ public class Demo2 {
       }
     };
     obj.show(5);
-    A lambda = (i) -> System.out.println(i); // As you know for 1 expression, there's no need for brackets
+    A lambda = i -> System.out.println(i); // As you know for 1 expression, there's no need for brackets
     lambda.show(5);
     return;
   }
