@@ -1,0 +1,1 @@
+When God closes all the doors somewhere by a single space. In case of tie, print the first one.

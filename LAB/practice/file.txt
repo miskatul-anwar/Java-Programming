@@ -1,0 +1,4 @@
+Name  Salary(BDT)
+PlayerA  300000
+PlayerB  Null
+PlayerC  250000
