@@ -1,27 +1,29 @@
-import java.util.*;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class treeMap1 {
   public static void main(String[] args) {
-    TreeMap<String, Integer> hp = new TreeMap<>();
-    hp.put("Bus", 2);
-    hp.put("Car", 1);
-    hp.put("Zeep", 1);
-    hp.put("Plane", 1);
-    System.out.println(hp);
-    if (hp.containsKey("Bus")) {
-      hp.putIfAbsent("Bus", 2);
+    Map<String, Integer> tp = new TreeMap<>();
+    tp.put("Bus", 2);
+    tp.put("Car", 1);
+    tp.put("Zeep", 1);
+    tp.put("Plane", 1);
+    System.out.println(tp);
+    if (tp.containsKey("Bus")) {
+      tp.putIfAbsent("Bus", 2);
     }
-    if (hp.containsValue(2)) {
+    if (tp.containsValue(2)) {
       System.out.println("Duo");
       System.out.println();
     }
-    for (HashMap.Entry<String, Integer> e : hp.entrySet()) {
+    for (Map.Entry<String, Integer> e : tp.entrySet()) {
       System.out.println(e);
     }
     System.out.println();
-    for (String Key : hp.keySet()) {
+    for (String Key : tp.keySet()) {
       System.out.println(Key);
     }
     return;
+
   }
 }

@@ -1,8 +1,8 @@
-import java.util.*;
+import java.util.HashMap;
 
 public class hashMap1 {
   public static void main(String[] args) {
-    HashMap<String, Integer> hp = new HashMap<>();
+    HashMap<String,Integer> hp = new HashMap<>();
     hp.put("Bus", 2);
     hp.put("Car", 1);
     hp.put("Zeep", 1);

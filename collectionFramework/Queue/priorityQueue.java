@@ -4,7 +4,8 @@ import java.util.Queue;
 
 public class priorityQueue {
   public static void main(String[] args) {
-    PriorityQueue<Integer> pq = new PriorityQueue<>();
+    Queue<Integer> pq = new PriorityQueue<>();
+
     pq.offer(40);
     pq.offer(30);
     pq.offer(10);
