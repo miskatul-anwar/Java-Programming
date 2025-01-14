@@ -72,7 +72,6 @@ public class MainProgram {
     });
   }
 
-  // Method to write averages to file
   private static void writeAveragesToFile(Map<Integer, Pair<Integer, Integer>> map, String fileName)
       throws IOException {
     List<String> lines = new ArrayList<>();
