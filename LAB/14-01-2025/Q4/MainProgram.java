@@ -1,4 +1,3 @@
-
 import java.util.Random;
 
 class ParallelMin implements Runnable {
@@ -28,7 +27,7 @@ class ParallelMin implements Runnable {
   }
 }
 
-public class MainClass {
+public class MainProgram {
   public static void main(String[] args) {
     Random random = new Random();
     int[] numbers = new int[500];
